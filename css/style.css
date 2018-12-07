@@ -160,3 +160,7 @@ input[type="file"] {}
   display: table;
   clear: both;
 }
+
+.delete {
+  display: none;
+}

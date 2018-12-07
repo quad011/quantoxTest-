@@ -1,5 +1,4 @@
-$(document).ready(function() {
-  $("button").click(function() {
-    $("p").hide();
-  });
-});
+function myFunction() {
+  var element = document.getElementsByClassName("card");
+  element.classList.toggle("delete");
+}
