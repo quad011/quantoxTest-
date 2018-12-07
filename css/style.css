@@ -1,1 +1,162 @@
-body {}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.settings {
+  width: 77%;
+  margin: 0 auto;
+}
+
+.settingsOne, .settingsTwo, .settingsThree {
+  margin-right: 20px;
+  float: left;
+}
+
+input[type="text"], input[type="number"], select {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 220px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+input[type="file"] {}
+
+.effect {
+  border: 1px solid #ccc;
+  padding: 3px 10px 3px;
+  transition: 0.4s;
+}
+
+.effect~.focus-border:before,
+.effect~.focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.3s;
+}
+
+.effect~.focus-border:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
+.effect~.focus-border i:before,
+.effect~.focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #3399FF;
+  transition: 0.4s;
+}
+
+.effect~.focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+
+.effect:focus~.focus-border:before,
+.effect:focus~.focus-border:after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.effect:focus~.focus-border i:before,
+.effect:focus~.focus-border i:after {
+  height: 100%;
+  transition: 0.4s;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.leftcolumn {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  width: 200px;
+  float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

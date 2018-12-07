@@ -13,15 +13,105 @@
 
   </header>
   <main>
-    <h2>This is a heading</h2>
+    <div class="row">
+      <div class="settings">
+        <div class="settingsOne">
+          <h3>Title</h3>
+          <div class="title">
+            <input class="effect" type="text" name="title" placeholder="Title">
+          </div>
+          <div class="inputImg">
+            <h3>Choose Image</h3>
+            <input type="file" name="pic" accept="img/*">
+          </div>
+          <div class="description">
+            <h3>Description</h3>
+            <textarea class="effect" name="description" form="usrform" placeholder="Text here..."></textarea>
+          </div>
+        </div>
 
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
+        <div class="settingsTwo">
+          <div class="postNumber">
+            <h3>Post Number</h3>
+            <input class="effect" type="number" name="postNumber" placeholder="Number of post to display">
+          </div>
+          <div class="checkbox">
+            <h3>Display Post Thumbnail</h3>
+            <label class="container">Yes
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">No
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="desc">
+            <h3>ASC/DESC</h3>
+            <select>
+              <option value="asc">ASC</option>
+              <option value="desc">DESC</option>
+            </select>
+          </div>
+        </div>
 
-    <button>Click me</button>
+        <div class="settingsThree">
+          <div class="postNumber">
+            <h3>Number Excerpt Character</h3>
+            <input class="effect" type="number" name="postNumber" placeholder="Number of character in excerpt">
+          </div>
+          <div class="checkbox">
+            <h3>Display Excerpt</h3>
+            <label class="container">Yes
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">No
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <img src="https://via.placeholder.com/200" alt="photo">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <img src="https://via.placeholder.com/200" alt="photo">
+          <p>Consectetur adipiscing elit, lorem ipsum dolor sit amet...</p>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <img src="https://via.placeholder.com/200" alt="photo">
+          <p>Consectetur adipiscing elit, lorem ipsum dolor sit amet...</p>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <img src="https://via.placeholder.com/200" alt="photo">
+          <p>Consectetur adipiscing elit, lorem ipsum dolor sit amet...</p>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <img src="https://via.placeholder.com/200" alt="photo">
+          <p>Consectetur adipiscing elit, lorem ipsum dolor sit amet...</p>
+        </div>
+      </div>
+    </div>
+
   </main>
+
   <footer>
   </footer>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
